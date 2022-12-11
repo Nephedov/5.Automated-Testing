@@ -153,5 +153,49 @@ public class CardOrderDeliveryTest {
         $x("//span[contains(text(), 'Забронировать')]").click();
         $(".input_invalid[data-test-id='phone'] .input__sub").shouldBe(visible).shouldHave(text("Поле обязательно для заполнения"));
     }
+
+    @Test
+    void cityListClickTest() {
+        $("[data-test-id='city'] input").setValue("Вл");
+        $x("//span[contains(text(), 'Владимир')]").click();
+        $("[data-test-id='date'] input").sendKeys(Keys.CONTROL + "A");
+        $("[data-test-id='date'] input").sendKeys(Keys.BACK_SPACE);
+        $("[data-test-id='date'] input").setValue(futureDate);
+        $("[data-test-id='name'] input").setValue("Петров Петр");
+        $("[data-test-id='phone'] input").setValue("+71231231212");
+        $(".checkbox__box").click();
+        $x("//span[contains(text(),'Забронировать')]").click();
+        $("[data-test-id='notification']").shouldBe(visible, Duration.ofSeconds(15));
+
+
+    }
+
+    @Test
+    void cityListGetElementTest() {
+        $("[data-test-id='city'] input").setValue("Вл");
+        $$(".menu-item__control").get(3).click();
+        $("[data-test-id='date'] input").sendKeys(Keys.CONTROL + "A");
+        $("[data-test-id='date'] input").sendKeys(Keys.BACK_SPACE);
+        $("[data-test-id='date'] input").setValue(futureDate);
+        $("[data-test-id='name'] input").setValue("Петров Петр");
+        $("[data-test-id='phone'] input").setValue("+71231231212");
+        $(".checkbox__box").click();
+        $x("//span[contains(text(),'Забронировать')]").click();
+        $("[data-test-id='notification']").shouldBe(visible, Duration.ofSeconds(15));
+    }
+
+    @Test
+    void calendarDateTest() {
+        $("[data-test-id='city'] input").setValue("Вл");
+        $x("//span[contains(text(), 'Владимир')]").click();
+        $("[data-test-id='date'] input").click();
+        $x(".//td[@role='gridcell'][contains(text(),'23')]").click();
+        $("[data-test-id='name'] input").setValue("Петров Петр");
+        $("[data-test-id='phone'] input").setValue("+71231231212");
+        $(".checkbox__box").click();
+        $x("//span[contains(text(),'Забронировать')]").click();
+        $("[data-test-id='notification']").shouldBe(visible, Duration.ofSeconds(15));
+
+    }
 }
 
