@@ -26,7 +26,6 @@ public class CardOrderDeliveryTest {
 
     @BeforeEach
     void setUp() {
-        Configuration.headless = true;
         open("http://localhost:7777/");
     }
 
