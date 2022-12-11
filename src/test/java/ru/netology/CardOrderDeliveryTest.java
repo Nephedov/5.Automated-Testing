@@ -1,7 +1,7 @@
 package ru.netology;
 
+
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -26,7 +26,7 @@ public class CardOrderDeliveryTest {
 
     @BeforeEach
     void setUp() {
-//        Configuration.headless = true;
+        Configuration.headless = true;
         open("http://localhost:7777/");
     }
 
