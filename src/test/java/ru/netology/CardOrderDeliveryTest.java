@@ -220,7 +220,7 @@ public class CardOrderDeliveryTest {
         $(".checkbox__box").click();
         $x("//span[contains(text(),'Забронировать')]").click();
         $("[data-test-id='notification']")
-                .shouldHave(Condition.text("Встреча успешно забронирована на "),
+                .shouldHave(Condition.text("Встреча успешно забронирована на " + generateDate(dayToAdd, "dd.MM.yyyy")),
                         Duration.ofSeconds(15))
                 .shouldBe(visible);
 
