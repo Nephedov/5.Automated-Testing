@@ -3,16 +3,16 @@
 # Домашнее задание к занятию «2.2. Selenide»
 
 ## Решения
- * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/e7f32db1446db21d28d75f6fc3f35559384127df/src/main/java/ru/netology/Date.java">Date.java</a>.
- * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/e7f32db1446db21d28d75f6fc3f35559384127df/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a> - класс с автотестами на основе Selenide.
+ * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a>.
+ * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a> - класс с автотестами на основе Selenide.
 ## Что было сделано
-* Настроен <a href="https://github.com/Nephedov/5.Automated-Testing/blob/1114dea99047722cdc71b46a1f6949c48c4c23d8/build.gradle">build.gradle</a> с зависимостями:
+* Настроен <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/build.gradle">build.gradle</a> с зависимостями:
   * JunitJupier.
   * Selenide.
-* Подключен к проекту AppVeyor. Настроен <a href="https://github.com/Nephedov/5.Automated-Testing/blob/1114dea99047722cdc71b46a1f6949c48c4c23d8/.appveyor.yml">appveyor.yml</a>. Добавлен бейдж в README.md, о статусе сборки при пуше.
-* Реализован служебный класс получения текущей даты со сдвигом n-дней - <a href="https://github.com/Nephedov/5.Automated-Testing/blob/1114dea99047722cdc71b46a1f6949c48c4c23d8/src/main/java/ru/netology/Date.java">Date.java</a>.
+* Подключен к проекту AppVeyor. Настроен <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/.appveyor.yml">appveyor.yml</a>. Добавлен бейдж в README.md, о статусе сборки при пуше.
+* Реализован служебный класс получения текущей даты со сдвигом n-дней - <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a>.
 * Автоматизированно тестирование формы заказа доставки карты -
-  <a href="https://github.com/Nephedov/5.Automated-Testing/blob/1114dea99047722cdc71b46a1f6949c48c4c23d8/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a>.
+  <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a>.
 ## Задача №1: заказ доставки карты
 
 Вам необходимо автоматизировать тестирование формы заказа доставки карты:
