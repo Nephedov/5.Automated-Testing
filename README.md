@@ -3,7 +3,7 @@
 # Домашнее задание к занятию «2.2. Selenide»
 
 ## Решения
- * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a>.
+ * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a> - класс с методом генерации даты.
  * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a> - класс с автотестами на основе Selenide.
 ## Что было сделано
 * Настроен <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/build.gradle">build.gradle</a> с зависимостями:
