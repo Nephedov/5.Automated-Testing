@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/clc3w5yrk3emoyal?svg=true)](https://ci.appveyor.com/project/Nephedov/cardorderdelivery)
 
-# Домашнее задание к занятию «2.2. Selenide»
+# «Selenide»
 
 ## Решения
  * <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a> - класс с методом генерации даты.
