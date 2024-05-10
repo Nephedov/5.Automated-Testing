@@ -13,6 +13,12 @@
 * Реализован служебный класс получения текущей даты со сдвигом n-дней - <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/main/java/ru/netology/Date.java">Date.java</a>.
 * Автоматизированно тестирование формы заказа доставки карты -
   <a href="https://github.com/Nephedov/5.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderDeliveryTest.java">CardOrderDeliveryTest.java</a>.
+
+
+---
+---
+
+
 ## Описание Задания №1: заказ доставки карты
 
 Вам необходимо автоматизировать тестирование формы заказа доставки карты:
